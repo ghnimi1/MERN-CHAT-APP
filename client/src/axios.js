@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const instance = axios.create({
-    baseURL: 'https://trusting-lewin-1cc369.netlify.app/api'
+    baseURL: 'http://realtimemernapp.herokuapp.com/api'
 })
 
 axios.interceptors.request.use(config => {
