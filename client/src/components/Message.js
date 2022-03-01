@@ -7,7 +7,7 @@ import io from 'socket.io-client';
 
 const Message = ({ message, current_uid, user }) => {
     let socket
-    const ENDPT = 'ws://localhost:4000';
+    const ENDPT = 'ws://realtimemernapp.herokuapp.com';
     useEffect(() => {
         socket = io(ENDPT);
     }, [ENDPT])
