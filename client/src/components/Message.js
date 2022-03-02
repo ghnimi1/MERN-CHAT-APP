@@ -7,7 +7,7 @@ import io from 'socket.io-client';
 
 const Message = ({ message, current_uid, user }) => {
     let socket
-    const ENDPT = 'ws://realtimemernapp.herokuapp.com';
+    const ENDPT = 'https://realtimemernapp.herokuapp.com';
     useEffect(() => {
         socket = io(ENDPT);
     }, [ENDPT])

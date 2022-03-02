@@ -11,7 +11,7 @@ const HomePage = () => {
     const { loading, error } = useSelector(state => state.createRoom)
     const [room, setRoom] = useState('');
     const [rooms, setRooms] = useState([]);
-    const ENDPT = 'ws://realtimemernapp.herokuapp.com';
+    const ENDPT = 'https://realtimemernapp.herokuapp.com';
     useEffect(() => {
         socket = io(ENDPT);
         return () => {

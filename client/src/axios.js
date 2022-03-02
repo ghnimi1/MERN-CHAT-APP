@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const instance = axios.create({
-    baseURL: 'http://realtimemernapp.herokuapp.com/api'
+    baseURL: 'https://realtimemernapp.herokuapp.com/api'
 })
 
 axios.interceptors.request.use(config => {

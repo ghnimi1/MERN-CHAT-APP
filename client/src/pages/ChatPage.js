@@ -10,7 +10,7 @@ import { updateOnlineUser } from '../redux/actions/userActions';
 import Loader from '../components/Loader';
 let socket;
 const ChatPage = () => {
-    const ENDPT = 'ws://realtimemernapp.herokuapp.com';
+    const ENDPT = 'https://realtimemernapp.herokuapp.com';
     const token = localStorage.getItem('token')
     const dispatch = useDispatch()
     let { room_id } = useParams();
